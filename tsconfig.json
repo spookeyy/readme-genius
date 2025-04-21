@@ -1,16 +1,21 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
+    "target": "ES2022", // Update to ES2022 or ESNext
+    "module": "ESNext", // Change to ESNext for ES module support
     "declaration": true,
     "outDir": "./dist",
     "rootDir": "./",
-    "esModuleInterop": true,
+    "esModuleInterop": true, // Enable interoperability with CommonJS modules
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "moduleResolution": "node",
+    "moduleResolution": "node", // Keep this for better compatibility with ESM
     "resolveJsonModule": true,
-    "strict": true
+    "strict": true,
+    "allowJs": false, // Prevent JavaScript files, ensure only TypeScript files
+    "noImplicitAny": true, // Ensure strict type checking
+    "jsx": "react", // If you're working with JSX/TSX files
+    "lib": ["es2022", "dom"], // Add necessary libs for ES2022
+    "sourceMap": true, // Generate source maps for debugging
   },
   "exclude": ["node_modules", "dist"]
 }

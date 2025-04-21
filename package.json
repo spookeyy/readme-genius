@@ -1,7 +1,8 @@
 {
   "name": "readme-genius",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI to auto-generate project READMEs",
+  "type": "module",
   "main": "dist/index.js",
   "bin": {
     "readme-genius": "dist/index.js"
@@ -9,7 +10,7 @@
   "scripts": {
     "build": "tsc",
     "start": "ts-node index.ts",
-    "package": "pkg . --targets node16-linux-x64,node16-macos-x64,node16-win-x64 --output dist/readme-genius"
+    "package": "pkg . --targets node18-linux-x64,node18-macos-x64,node18-win-x64 --output dist/readme-genius"
   },
   "keywords": [
     "readme",
