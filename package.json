@@ -1,0 +1,36 @@
+{
+  "name": "readme-genius",
+  "version": "1.0.1",
+  "description": "CLI to auto-generate project READMEs",
+  "main": "dist/index.js",
+  "bin": {
+    "readme-genius": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node index.ts",
+    "package": "pkg . --targets node16-linux-x64,node16-macos-x64,node16-win-x64 --output dist/readme-genius"
+  },
+  "keywords": [
+    "readme",
+    "cli",
+    "documentation",
+    "typescript"
+  ],
+  "author": "your-name",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^9.2.13",
+    "ora": "^6.3.1",
+    "simple-git": "^3.22.0",
+    "ts-morph": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.4.3",
+    "pkg": "^5.5.0"
+  }
+}
